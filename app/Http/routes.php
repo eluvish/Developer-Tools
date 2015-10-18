@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+# Explicit routes for Books
+Route::get('/lorem', 'LoremController@getIndex');
+
+Route::get('/createuser', 'CreateUserController@getIndex');
+Route::post('/createuser', 'CreateUserController@postIndex');
+
+Route::get('/password', 'PasswordGenController@GetIndex');

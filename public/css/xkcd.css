@@ -1,0 +1,12 @@
+.password {
+ 			text-align:center;
+ 			font-size:3rem;
+ 			margin-bottom:25px;
+ 			color:#f39c12;
+ 			font-family:consolas,courier;
+ 			display:inline-block;
+ 			padding:15px;
+ 			font-weight:800;
+			background-color: #eee;
+			border-radius: 50px;
+ 		}
