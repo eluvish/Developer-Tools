@@ -26,7 +26,7 @@ class PasswordGenController extends Controller
           $path = public_path();
 
           // Array to hold file contents of word.txt
-          $f_contents = file("$path\files\words.txt");
+          $f_contents = file("$path/files/words.txt");
 
           // Count the number of lines in the file - later to be used in the rand() function
           $lines = count($f_contents) - 1;
