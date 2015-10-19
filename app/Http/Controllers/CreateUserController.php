@@ -21,10 +21,10 @@ class CreateUserController extends Controller
           // validate form input
           $this->validate($request, ['numUsers' => 'required|numeric|min:1']);
 
-          // get the number of fake users the user wants generated
+          // just to keep it tidy let's give it its own variable
           $numUsers = $request->input('numUsers');
 
-          // create array to hold user info if more than one requested
+          // create array to hold user info
           $users = array();
 
           // generate requested number of users
@@ -36,7 +36,7 @@ class CreateUserController extends Controller
           // send the $users array to the view
           return view('createuser.index')->with(['users'=>$users]);
         }
-        else
+        else // returns a view with just a form.
         {
           return view('createuser.index');
         }
@@ -45,13 +45,10 @@ class CreateUserController extends Controller
 
     private function GenerateUser()
     {
-        // Tested and working properly
-
         $faker = Faker::create();
 
         $user = array();
 
-        // default option: just a name
         $user['name'] = $faker->name;
         $user['email'] = $faker->safeEmail;
         $user['profile'] = $faker->sentence($nbWords = 24);

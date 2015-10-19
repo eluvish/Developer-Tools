@@ -17,10 +17,9 @@ class PasswordGenController extends Controller
     {
         if($request->input('number_of_words'))
         {
-          // validate form input
-          //$this->validate($request, ['number_of_words' => 'required|numeric|min:1|max:9']);
+          // no need to validate form input because it is size 1 so max is a 9 word password.
 
-          // Cast the number of words the user wants to an int
+          // Get a tidy variable for number of words requested
           $num = $request->input('number_of_words');
 
           // Array to hold file contents of word.txt
@@ -45,6 +44,7 @@ class PasswordGenController extends Controller
           }
 
           // if the user requested a number, add it to the array
+          // could have used $request but copied code from P2
           if (isset($_GET["add_number"]))
           {
             array_push($output, rand(0,9));

@@ -20,7 +20,6 @@ class LoremController extends Controller
         {
                   // Validate form input for (1) required, (2) must be numeric, and (3) can not be a negative number.
                   $this->validate($request, ['numParagraphs' => 'required|numeric|min:1|max:10']);
-                  //dd($request->all());
 
                   // Create new Lorem Ipsum Object
                   $generator = new Generator();
@@ -31,7 +30,7 @@ class LoremController extends Controller
                   // return view with an array of paragraphs
                   return view('lorem.index')->with(['paragraphs'=>$paragraphs]);
         }
-        else
+        else // this is here because I wanted to use just GET instead of a GET and a POST function.
         {
           return view('lorem.index');
         }
