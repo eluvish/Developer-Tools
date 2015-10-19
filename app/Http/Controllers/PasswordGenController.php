@@ -22,8 +22,11 @@ class PasswordGenController extends Controller
           // Get a tidy variable for number of words requested
           $num = $request->input('number_of_words');
 
+          // get the public directory pathinfo
+          $path = public_path();
+
           // Array to hold file contents of word.txt
-          $f_contents = file("files\words.txt");
+          $f_contents = file("$path\files\words.txt");
 
           // Count the number of lines in the file - later to be used in the rand() function
           $lines = count($f_contents) - 1;
