@@ -72,35 +72,35 @@
   </section>
   </header>
 
-    <section>
+<section>
         {{-- Main page content will be yielded here --}}
         <div class="container">
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-10" style="padding:20px;">
+              <div class="col-md-10" style="padding:20px;">
 
               @yield('content')
 
-            </div>
+              </div>
             <div class="col-md-1"></div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="menu bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-lg-offset-1 text-center" style="padding:20px;">
-            <a class="btn btn-default btn-lg" href="http://www.github.com/eluvish">Github</a>
-            <a class="btn btn-default btn-lg" href="http://p1.eliluvish.com/">P1</a>
-            <a class="btn btn-default btn-lg" href="http://p2.eliluvish.com/">P2</a>
-            <a class="btn btn-default btn-lg" href="http://p3.eliluvish.com/">P3</a>
-            <hr class="small">
-            <p>Copyright &copy; http://www.eliluvish.com 2015</p>
           </div>
         </div>
+</section>
+
+<footer class="menu bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center" style="padding:20px;">
+        <a class="btn btn-default btn-lg" href="http://www.github.com/eluvish">Github</a>
+        <a class="btn btn-default btn-lg" href="http://p1.eliluvish.com/">P1</a>
+        <a class="btn btn-default btn-lg" href="http://p2.eliluvish.com/">P2</a>
+        <a class="btn btn-default btn-lg" href="http://p3.eliluvish.com/">P3</a>
+        <hr class="small">
+        <p>Copyright &copy; http://www.eliluvish.com 2015</p>
       </div>
-    </footer>
+    </div>
+  </div>
+</footer>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
