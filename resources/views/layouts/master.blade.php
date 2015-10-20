@@ -26,13 +26,10 @@
                        <h2>Developer's Best Friend</h2>
                        <hr class="small">
                        <div class="row">
-
                          <div class="col-md-4">
-                           <a href="/lorem">
-                             <button type="button" class="btn btn-default btn-lg">
+                             <a class="btn btn-default btn-lg" href="/lorem">
                                <span class="glyphicon glyphicon-align-left"></span>
-                             </button>
-                           </a>
+                             </a>
                            <h4><strong>Lorem Ipsum Generator</strong></h4>
                              <ul class="pagination">
                                <li><a href="/lorem?numParagraphs=1">1</a></li>
@@ -43,50 +40,44 @@
                          </div>
 
                          <div class="col-md-4">
-                           <a href="/createuser">
-                             <button type="button" class="btn btn-default btn-lg">
-                               <span class="glyphicon glyphicon-user"></span>
-                             </button>
+                           <a class="btn btn-default btn-lg" href="/createuser">
+                             <span class="glyphicon glyphicon-user"></span>
                            </a>
-                                 <h4><strong>Random User Generator</strong></h4>
-                                   <ul class="pagination">
-                                     <li><a href="/createuser?numUsers=1">1</a></li>
-                                     <li><a href="/createuser?numUsers=2">2</a></li>
-                                     <li><a href="/createuser?numUsers=3">3</a></li>
-                                     <li><a href="/createuser?numUsers=4">4</a></li>
-                                     <li><a href="/createuser?numUsers=5">5</a></li>
-                                     <li><a href="/createuser?numUsers=6">6</a></li>
-                                   </ul>
-                          </div>
-
-                          <div class="col-md-4">
-                            <a href="/password">
-                              <button type="button" class="btn btn-default btn-lg">
-                                <span class="glyphicon glyphicon-random"></span>
-                              </button>
+                             <h4><strong>Random User Generator</strong></h4>
+                               <ul class="pagination">
+                                 <li><a href="/createuser?numUsers=1">1</a></li>
+                                 <li><a href="/createuser?numUsers=2">2</a></li>
+                                 <li><a href="/createuser?numUsers=3">3</a></li>
+                                 <li><a href="/createuser?numUsers=4">4</a></li>
+                                 <li><a href="/createuser?numUsers=5">5</a></li>
+                                 <li><a href="/createuser?numUsers=6">6</a></li>
+                               </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="btn btn-default btn-lg" href="/password">
+                              <span class="glyphicon glyphicon-random"></span>
                             </a>
-                              <h4><strong>xkcd Password Generator</strong></h4>
-                                <ul class="pagination">
-                                  <li><a href="/password?number_of_words=4">4</a></li>
-                                  <li><a href="/password?number_of_words=5">5</a></li>
-                                  <li><a href="/password?number_of_words=6">6</a></li>
-                                  <li><a href="/password?number_of_words=7">7</a></li>
-                                </ul>
+                            <h4><strong>xkcd Password Generator</strong></h4>
+                              <ul class="pagination">
+                                <li><a href="/password?number_of_words=4">4</a></li>
+                                <li><a href="/password?number_of_words=5">5</a></li>
+                                <li><a href="/password?number_of_words=6">6</a></li>
+                                <li><a href="/password?number_of_words=7">7</a></li>
+                              </ul>
                           </div>
-
                       </div>
-                  </div>
+                </div>
             </div>
         </div>
   </section>
   </header>
 
-    <section style="padding:20px;">
+    <section>
         {{-- Main page content will be yielded here --}}
         <div class="container">
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-10">
+            <div class="col-md-10" style="padding:20px;">
 
               @yield('content')
 
@@ -100,10 +91,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10 col-lg-offset-1 text-center" style="padding:20px;">
-            <a type="button" class="btn btn-default btn-lg" href="http://www.github.com/eluvish">Github</a>
-            <a type="button" class="btn btn-default btn-lg" href="http://p1.eliluvish.com/">P1</a>
-            <a type="button" class="btn btn-default btn-lg" href="http://p2.eliluvish.com/">P2</a>
-            <a type="button" class="btn btn-default btn-lg" href="http://p3.eliluvish.com/">P3</a>
+            <a class="btn btn-default btn-lg" href="http://www.github.com/eluvish">Github</a>
+            <a class="btn btn-default btn-lg" href="http://p1.eliluvish.com/">P1</a>
+            <a class="btn btn-default btn-lg" href="http://p2.eliluvish.com/">P2</a>
+            <a class="btn btn-default btn-lg" href="http://p3.eliluvish.com/">P3</a>
             <hr class="small">
             <p>Copyright &copy; http://www.eliluvish.com 2015</p>
           </div>
