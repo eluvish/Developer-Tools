@@ -40,11 +40,6 @@ such as a page specific styesheets.
 <h1> Generate Random User </h1>
 <form role="form" method='GET' action='/createuser'>
   How many? <input type='text' name='numUsers' size=4><br><br>
-  Extras:<br>
-  Birthdate: <input type='checkbox' name='bday'><br>
-  Email Address: <input type='checkbox' name='email'><br>
-  Mailing Address: <input type='checkbox' name='address'><br>
-  Phone Number: <input type='checkbox' name='phone'><br>
   <button type='submit' class="btn btn-primary">Generate Users</button>
 
   @if(count($errors) > 0)
