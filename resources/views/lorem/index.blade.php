@@ -12,7 +12,7 @@ Use it to add specific things that *this* View needs in the head,
 such as a page specific styesheets.
 --}}
 @section('head')
-  <link href="/css/lorem.css" type='text/css' rel='stylesheet'>
+<link href="/css/lorem.css" type='text/css' rel='stylesheet'>
 @stop
 
 
@@ -32,7 +32,7 @@ such as a page specific styesheets.
   <h2>How many paragraphs?</h2>
     <form role="form" method='GET' action='/lorem'>
         <p>Min:1 | Max:10</p><input type='text' name='numParagraphs' size="2">
-        <br><br>
+        <!-- <input type='hidden' name='_token' value={{csrf_token()}}>--><br><br>
         <button type='submit' class="btn btn-primary">Generate</button>
 
   @if(count($errors) > 0)

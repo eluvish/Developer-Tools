@@ -15,7 +15,7 @@ The site uses Laravel 5.1, PHP, HTML, and CSS. Two packages are used from packag
 Instead of placing everything in one page I divided the site in to three pages, one for each function where there is an HTML form that takes input as required by the project. In addition, however, I also added numbered buttons in the header as a shortcut for generating content.
 
 ## Screencast Demonstration:
-* URL: http://screencast.com/t/lkdUhYMpkW
+* URL: TBD
 
 ## Details for Teaching Team:
 * The file words.txt was used to generate the word list for the xkcd password generator. I suppose I could have used a package but why reinvent the wheel when p2 is done.
