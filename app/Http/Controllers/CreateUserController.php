@@ -24,13 +24,17 @@ class CreateUserController extends Controller
           // just to keep it tidy let's give it its own variable
           $numUsers = $request->input('numUsers');
 
+          $options = $this->GetOptions($request);
+
+          dd($options);
+
           // create array to hold user info
           $users = array();
 
           // generate requested number of users
           for($i = 0; $i<$numUsers; $i++)
           {
-                $users[$i] = $this->GenerateUser();
+                $users[$i] = $this->GenerateUser($options);
           }
 
           // send the $users array to the view
@@ -43,7 +47,27 @@ class CreateUserController extends Controller
 
     }
 
-    private function GenerateUser()
+    private function GetOptions($request)
+    {
+      $options = array('bday' => false,
+                       'email' => false,
+                       'address' => false,
+                       'phone' => false);
+
+      $keys = array_keys($options);
+
+      foreach ($keys as $key)
+      {
+          if ($request->has($key))
+          {
+            $options[$key] = true;
+          }
+      }
+
+      return $options;
+    }
+
+    private function GenerateUser($options)
     {
         $faker = Faker::create();
 
@@ -52,6 +76,13 @@ class CreateUserController extends Controller
         $user['name'] = $faker->name;
         $user['email'] = $faker->safeEmail;
         $user['profile'] = $faker->sentence($nbWords = 24);
+
+        foreach($options as $option)
+        {
+
+        }
+
+
 
         return $user;
     }
